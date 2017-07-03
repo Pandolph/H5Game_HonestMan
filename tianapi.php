@@ -1,6 +1,6 @@
 <?php
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
-	$weixin = 'Pandolphlin';  //此处填写你的微信号
+	$weixin = '微信号';  //此处填写你的微信号
 	extract($_POST);
 
 	$month = intval(substr($birthday,5,2));
@@ -35,7 +35,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 	$font2 = $basePath.'assets/font2.ttf';
 	$font3 = $basePath.'assets/font3.ttf';
 	$source = $basePath.'assets/'.$num.'.jpg';
-	$water = $basePath.'assets/ewm1.jpg';
+	$water = $basePath.'assets/ewm.jpg';
 	$savepath = 'images/'.date('Ym');
 	$savename = md5($month.$day.$name).'.jpg';
 	$savefile = $savepath .'/'. $savename;
