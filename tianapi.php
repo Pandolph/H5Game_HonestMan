@@ -1,6 +1,6 @@
 <?php
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
-	$weixin = '微信号';  //此处填写你的微信号
+	$weixin = '求思林潘';  //此处填写你的微信号
 	extract($_POST);
 
 	$month = intval(substr($birthday,5,2));
@@ -85,8 +85,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 		imagefttext($source, 60, 0, $margin * $i + $left, 335, imagecolorallocate($source, 255,255,255), $font2, mb_substr($name,$i,1,'utf-8'));
 	}
     imagecopymerge($source, $water, 40, 590, 0, 0, 110, 110, 100);
-	imagefttext($source, 17, 0, 175, 630, imagecolorallocate($source, 180,180,180), $font3, '长安识别二维码，生成您的性格签名');
-    imagefttext($source, 17, 0, 175, 670, imagecolorallocate($source, 180,180,180), $font3, '或关注“'.$weixin.'”公众号生成');
+	imagefttext($source, 17, 0, 175, 630, imagecolorallocate($source, 180,180,180), $font3, '长按识别二维码，生成星座性格测试结果');
+    imagefttext($source, 17, 0, 175, 670, imagecolorallocate($source, 180,180,180), $font3, '关注公众号“'.$weixin.'”进一步免费咨询');
 	imagejpeg($source, $basePath.$savefile);
     imagedestroy($source);
     imagedestroy($water);

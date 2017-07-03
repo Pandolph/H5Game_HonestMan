@@ -1,17 +1,17 @@
 *{margin: 0; padding: 0;}
 html, body{width: 100%; height: 100%;}
-.background{width: 100%; height: 100%; position:relative; top: 0; left: 0; background: url('http://dingphone.ufile.ucloud.com.cn/images/time2plato_marketing/2/1.png') center center / cover no-repeat;}
+.background{width: 100%; height: 100%; position:relative; top: 0; left: 0; background: url('b1.png') center center / cover no-repeat;}
 .name{width: 84%; height: 40px; position: absolute; top: 46%; left: 8%; border-bottom: 2px solid #4E617E;}
 .birthday{width: 84%; height: 40px; position: absolute; top: 55%; left: 8%; border-bottom: 2px solid #4E617E;}
 .title{width: auto; height: 20px; float:left; margin-left:2px; margin-top: 15px; color: #FFFFFF; font-size: 18px; line-height: 20px; display: block;}
 .write-name, .chose-birthday{width: 200px; height: 20px; float:left; margin-left:20px; margin-top: 15px; display: block;}
 .user-name, .user-birthday{width: 100%; height:100%; color: #92939B; font-size: 16px; border: none; outline: none; background: none;}
-.button{background: url('http://dingphone.ufile.ucloud.com.cn/images/time2plato_marketing/2/2.png') center center / 100% 100% no-repeat;}
+.button{background: url('b2.png') center center / 100% 100% no-repeat;}
 .transparent-float{width: 100%; height: 100%; background-color: #000000; opacity: 0.5; -webkit-opacity: 0.5; position: fixed; z-index: 99; top: 0; left: 0; display: none;}
 .float{width: 100%; height: 100%; position: fixed; z-index: 100; top: 0; left: 0; display: none;}
-.picture-box{background: url('http://dingphone.ufile.ucloud.com.cn/images/time2plato_marketing/2/5.png') center center / 100% 100% no-repeat;}
+.picture-box{background: url('b3.png') center center / 100% 100% no-repeat;}
 .close{width: 40px; height: 40px; position: absolute; top: 0; right:0;}
-.text{background: url('http://dingphone.ufile.ucloud.com.cn/images/time2plato_marketing/2/4.png') center center / 100% 100% no-repeat;}
+.text{background: url('b4.png') center center / 100% 100% no-repeat;}
 .picture{background-color: #000000;}
 .mypicture{width: 100%; height: 100%; background: none; display: none;}
 .scan{background-color: #000000; color: #FFFFFF; font-size: 20px; text-align:center;}
