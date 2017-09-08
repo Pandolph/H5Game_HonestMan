@@ -34,7 +34,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 	$font1 = $basePath.'assets/font1.ttf';
 	$font2 = $basePath.'assets/font2.ttf';
 	$font3 = $basePath.'assets/font3.ttf';
-	$source = $basePath.'assets/'.$num.'.jpg';
+	$source = $basePath.'assets/lsr'.$num.'.jpg';
 	$water = $basePath.'assets/ewm.jpg';
 	$savepath = 'images/'.date('Ym');
 	$savename = md5($month.$day.$name).'.jpg';
@@ -73,7 +73,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 			$x=120;
 			$y=185;
     }
-	imagefttext($source, 18, 0, $x, $y, imagecolorallocate($source, 175,152,85), $font1, $month.'月'.$day.'日');
+	# imagefttext($source, 18, 0, $x, $y, imagecolorallocate($source, 175,152,85), $font1, $month.'月'.$day.'日');
 	$length = mb_strlen($name,'utf-8');
 	$margin = 120;
 	$left = 20;
@@ -85,8 +85,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 		imagefttext($source, 60, 0, $margin * $i + $left, 335, imagecolorallocate($source, 255,255,255), $font2, mb_substr($name,$i,1,'utf-8'));
 	}
     imagecopymerge($source, $water, 40, 590, 0, 0, 110, 110, 100);
-	imagefttext($source, 17, 0, 175, 630, imagecolorallocate($source, 180,180,180), $font3, '长按识别二维码，生成星座性格测试结果');
-    imagefttext($source, 17, 0, 175, 670, imagecolorallocate($source, 180,180,180), $font3, '关注公众号“'.$weixin.'”进一步免费咨询');
+	
+	$result = 2*($month + $day);
+	imagefttext($source, 17, 0, 175, 630, imagecolorallocate($source, 255,255,255), $font3, '经测试，你的老实人指数为'.$result);
+	imagefttext($source, 17, 0, 175, 670, imagecolorallocate($source, 255,255,255), $font3, '答应我，要坚强地活下去');
+    # imagefttext($source, 17, 0, 175, 670, imagecolorallocate($source, 255,255,255), $font3, ' “'.$weixin.'”，一个老实人都会关注的公众号');
 	imagejpeg($source, $basePath.$savefile);
     imagedestroy($source);
     imagedestroy($water);
